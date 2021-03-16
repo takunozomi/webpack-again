@@ -1,25 +1,20 @@
-body {
+html{
     margin: 0;
     padding: 0;
 }
-.container {
-    color: moccasin;
+body {
     background: lightcoral;
-    height: 100vh;
-    h1 {
-        font-size: 2em;
-        text-align: center;
-        transition: all .5s;
-        &:hover{
-            color: lightcyan;
-        }
-    }
-    p{
-        text-align: center;
-    }
-    img{
-        width: 300px;
-        height: 300px;
+}
+h1 {
+    text-align: center;
+    color: moccasin;
+    transition: all .5s;
+    &:hover{
+        color: #000;
     }
 }
+.img-wrapper{
+   text-align: center;
+}
+
 
