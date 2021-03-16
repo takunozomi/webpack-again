@@ -1,16 +1,19 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
     mode:'development',
     //全てのファイルの基準となる。デフォルトはindex.js
-    entry: { app:'./src/app.js'},
+    entry: {
+        main:'./src/javascripts/main.js'
+    },
     output: {
         //デフォルトはmain.jsがバンドルされたファイル
         //どこにバンドルファイルを作るのかをpathで指定
         path:path.resolve(__dirname, './dist'),
-        filename: 'main.js',
+        filename: 'javascripts/main.js',
     },
     module: {
         rules: [
@@ -28,23 +31,23 @@ module.exports = {
 
             {
                 test:/\.(png|jpe?g|gif|woff2?|ttf|eot)$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'images/[name][ext]'
+                },
                 use:[
-                        {
-                            loader: 'file-loader',
-                            options: {
-                                name : '[name].[ext]',
-                                outputPath: 'images',
-                                pubulicPath: 'images'
-                         },
-                     },
+
                 ],
             },
         ],
     },
     plugins: [
-        new MiniCssExtractPlugin(),
-        new HtmlWebpackPlugin({
-            template: './src/index.html',
+        new MiniCssExtractPlugin({
+            filename: './stylesheets/main.css'
         }),
+        new HtmlWebpackPlugin({
+            template: './src/templets/index.html',
+        }),
+        new CleanWebpackPlugin(),
     ],
 }

@@ -9,35 +9,35 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/app.scss":
-/*!**********************!*\
-  !*** ./src/app.scss ***!
-  \**********************/
+/***/ "./src/stylesheets/main.scss":
+/*!***********************************!*\
+  !*** ./src/stylesheets/main.scss ***!
+  \***********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://webpack-practice/./src/app.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://webpack-practice/./src/stylesheets/main.scss?");
 
 /***/ }),
 
-/***/ "./src/app.js":
-/*!********************!*\
-  !*** ./src/app.js ***!
-  \********************/
+/***/ "./src/javascripts/main.js":
+/*!*********************************!*\
+  !*** ./src/javascripts/main.js ***!
+  \*********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sub__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sub */ \"./src/sub.js\");\n/* harmony import */ var _sub__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sub__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.scss */ \"./src/app.scss\");\n\n\n\nconsole.log('hello');\n\n\n\n//# sourceURL=webpack://webpack-practice/./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sub__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sub */ \"./src/javascripts/sub.js\");\n/* harmony import */ var _sub__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sub__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../stylesheets/main.scss */ \"./src/stylesheets/main.scss\");\n\n\n\nconsole.log('hello');\n\n\n\n//# sourceURL=webpack://webpack-practice/./src/javascripts/main.js?");
 
 /***/ }),
 
-/***/ "./src/sub.js":
-/*!********************!*\
-  !*** ./src/sub.js ***!
-  \********************/
+/***/ "./src/javascripts/sub.js":
+/*!********************************!*\
+  !*** ./src/javascripts/sub.js ***!
+  \********************************/
 /***/ (function() {
 
-eval("\nconsole.log('this is a sub javascript file');\n\n//# sourceURL=webpack://webpack-practice/./src/sub.js?");
+eval("\nconsole.log('this is a sub javascript file');\n\n//# sourceURL=webpack://webpack-practice/./src/javascripts/sub.js?");
 
 /***/ })
 
@@ -113,7 +113,7 @@ eval("\nconsole.log('this is a sub javascript file');\n\n//# sourceURL=webpack:/
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/app.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/javascripts/main.js");
 /******/ 	
 /******/ })()
 ;

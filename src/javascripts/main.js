@@ -1,5 +1,5 @@
 import './sub';
-import './app.scss'
+import '../stylesheets/main.scss'
 
 console.log('hello');
 
