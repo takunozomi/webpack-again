@@ -1,0 +1,29 @@
+h1 {
+    font-size: 2em;
+    color: moccasin;
+    text-align: center;
+    transition: all .5s;
+    &:hover{
+        color: #000;
+        transform: translate(20px, 20px);
+    }
+}
+
+.bg-wrapper{
+    display: flex;
+    justify-content: space-around;
+    .bg{
+        background-size: cover;
+        width: 100px;
+        height: 100px;
+    }
+    .bg:nth-child(1) {
+        background: url(../src/images/ancolewat.jpg);
+    }
+    .bg:nth-child(2){
+        background: url(../src/images/grandcyanion.jpg);
+    }
+    .bg:nth-child(3){
+        background: url(../src/images/hoshizora.jpg);
+    }
+}
