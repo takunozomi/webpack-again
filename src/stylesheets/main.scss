@@ -1,3 +1,4 @@
+@import './footer.scss';
 html{
     margin: 0;
     padding: 0;
@@ -5,16 +6,31 @@ html{
 body {
     background: lightcoral;
 }
+.content-width {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+#container {
+    @extend .content-width;
+}
 h1 {
     text-align: center;
     color: moccasin;
     transition: all .5s;
     &:hover{
-        color: #000;
+        color: black;
     }
 }
 .img-wrapper{
    text-align: center;
 }
+
+ul {
+    li{
+        list-style: none;
+    }
+}
+
 
 

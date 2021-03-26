@@ -18,7 +18,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.scss$/,
+                test: /\.(css|sass|scss)$/,
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
@@ -66,6 +66,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/templets/access.pug',
             filename: 'access.html'
+
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/templets/menbers/taro.pug',
+            filename: 'menbers/taro.html'
 
         }),
         new CleanWebpackPlugin(),
